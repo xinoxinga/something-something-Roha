@@ -84,6 +84,8 @@
 </head>
 <body>
 
+    <audio id="bgMusic" src="our-song.mp3"></audio>
+
     <div class="white-box" id="mainBox">
         <img src="image_31b797.png" class="my-img">
         
@@ -101,6 +103,7 @@
         const noButton = document.getElementById('noBtn');
         const yesButton = document.getElementById('yesBtn');
         const mainBox = document.getElementById('mainBox');
+        const music = document.getElementById('bgMusic');
 
         noButton.addEventListener('mouseover', () => {
             const boxWidth = mainBox.offsetWidth;
@@ -114,6 +117,10 @@
         });
 
         yesButton.addEventListener('click', () => {
+            // Set volume to 80%
+            music.volume = 0.8;
+            music.play();
+
             mainBox.innerHTML = `
                 <h1 style="font-size: 40px; color: #ff4d6d; margin-bottom: 20px;">YAY! 🎉</h1>
                 <img src="cat_celebration.gif" width="200" style="border-radius: 20px; margin-bottom: 20px;">
