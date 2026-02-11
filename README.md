@@ -4,7 +4,7 @@ A personalized, "prank-style" web application built to create a fun and interact
 
 ## 🚀 Live Link
 View the live project here: 
-`https://xinoxinga.github.io/something-something-Roha/)New Text Document.html`
+`https://xinoxinga.github.io/something-something-Roha/New Text Document.html`
 
 ## ✨ Features
 * **Trapped "No" Button Logic:** The "No" button intelligently jumps to random coordinates strictly within the boundaries of the white UI box, making it impossible to click while maintaining a clean layout.
