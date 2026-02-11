@@ -1,31 +1,32 @@
 # Valentine's Day Interactive Proposal: The Roha Edition 💖
 
-A personalized, "prank-style" web application built to create a fun and interactive Valentine's Day proposal. This version features custom illustrations, multi-stage animations, and a "No" button designed to challenge the user before reveal.
+A personalized, full-experience web application built for a serious Valentine's Day proposal. This project combines interactive JavaScript logic, custom visual assets, and a synchronized audio reveal.
 
 ## 🚀 Live Link
 View the live project here: 
 `https://xinoxinga.github.io/something-something-Roha/New Text Document.html`
 
-## ✨ Features
-* **Trapped "No" Button Logic:** The "No" button intelligently jumps to random coordinates strictly within the boundaries of the white UI box, making it impossible to click while maintaining a clean layout.
-* **Personalized Messaging:** Custom deep-pink typography for **Roha**, featuring a playful "dangerous" reveal message upon success.
-* **Multi-Asset Animation:** * Starts with a custom mouse illustration (`image_31b797.png`).
-  * Transitions to a celebratory cat GIF and a playful "Bubu Dudu" reaction GIF on "Yes".
-* **Glassmorphism UI:** A modern, rounded "white-box" design with a soft pink background and drop shadows.
+## ✨ New Features
+* **Synchronized Audio Reveal:** A hidden audio player triggers automatically upon clicking "Yes."
+* **Calibrated Audio Levels:** The music volume is hard-coded to 80% (0.8) to ensure a pleasant listening experience across different devices.
+* **Trapped "No" Button Logic:** The "No" button remains trapped within the white glass container, preserving the UI layout while maintaining the playful interaction.
+* **Multi-Stage Visuals:** * **State 1:** Custom mouse illustration (`image_31b797.png`).
+    * **State 2:** Success celebration with `cat_celebration.gif` and a secondary `bubu-bubu-dudu.gif` reaction.
 
-## 🛠️ Technical Implementation
-* **Positioning:** Uses `position: relative` on the container and `position: absolute` on the button to keep the button "trapped" within the UI box.
-* **Event Listeners:** Utilizes JavaScript `mouseover` events to trigger the movement and `click` events to handle the final state change.
-* **Dynamic DOM Manipulation:** Replaces the internal HTML of the main box to show the final message and GIFs without a page reload.
+## 🛠️ Technical Details
+* **Audio Handling:** Uses the HTML5 `<audio>` element with JavaScript-controlled `.play()` and `.volume` properties to bypass browser autoplay restrictions.
+* **CSS Layout:** Employs `position: relative` on the parent container to act as a boundary for the `absolute` positioned runaway button.
+* **Color Palette:** Specifically uses Deep Pink (`#d63384`) for the primary proposal text to enhance visibility and romantic tone.
 
-## 📂 Required Files
-Ensure the following files are in the root directory for the site to function correctly:
-1. `New Text Document.html`
-2. `image_31b797.png`
-3. `cat_celebration.gif`
-4. `bubu-bubu-dudu.gif`
+## 📂 Required Files & Structure
+For the site to function as intended, the following files must be in the root directory:
+1. `valentine.html` - Main application.
+2. `image_31b797.png` - Primary illustration.
+3. `cat_celebration.gif` - Success animation 1.
+4. `bubu-bubu-dudu.gif` - Success animation 2.
+5. `our-song.mp3` - Background music file.
 
-## 📝 Usage
-1. Upload all assets to a GitHub repository.
-2. Enable **GitHub Pages** in the repository settings.
-3. Share the generated link for the full interactive experience!
+## 📝 Deployment Instructions
+1. Upload all 5 assets to your GitHub repository.
+2. Ensure filenames are exactly as written in the code (lowercase recommended).
+3. Enable **GitHub Pages** in settings and point to the `main` branch.
